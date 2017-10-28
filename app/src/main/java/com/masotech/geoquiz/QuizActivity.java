@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -14,9 +15,9 @@ public class QuizActivity extends AppCompatActivity {
 
     // ToDo (1): add all Strings we need to the strings.xml file in the res/values/strings.xml.
     // Todo (3) : declare the Buttons and TextViews that we need.
-    private Button mTrueButton;
-    private Button mFalseButton;
-    private Button mNextButton;
+    private ImageButton mTrueButton;
+    private ImageButton mFalseButton;
+    private ImageButton mNextButton;
     private TextView mQuestionTextView;
 
     // ToDo (4): create an array of questions called mQuestionBank .
@@ -38,12 +39,12 @@ public class QuizActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz);
+        setContentView(R.layout.activity_quiz_new_design);
         //ToDo (6): get a reference to the question_tv , true_btn , false_btn and next_btn.
         mQuestionTextView = (TextView) findViewById(R.id.question_text_view);
-        mTrueButton = (Button) findViewById(R.id.true_button);
-        mFalseButton = (Button) findViewById(R.id.false_button);
-        mNextButton = (Button) findViewById(R.id.next_button);
+        mTrueButton = (ImageButton) findViewById(R.id.true_button);
+        mFalseButton = (ImageButton) findViewById(R.id.false_button);
+        mNextButton = (ImageButton) findViewById(R.id.next_button);
 
         // ToDo (7) : set onClickListener for the True_btn.
         mTrueButton.setOnClickListener(new View.OnClickListener() {
