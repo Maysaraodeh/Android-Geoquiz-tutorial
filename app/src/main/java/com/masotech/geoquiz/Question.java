@@ -5,7 +5,7 @@ package com.masotech.geoquiz;
  */
 
 
-// ToDo (2): Create Question Class.
+// ToDo (2): Create a java class called Question.
 public class Question {
 
     private int mTextResId;
